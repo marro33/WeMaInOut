@@ -1,0 +1,36 @@
+//
+//  WToast.h
+//  WToast
+//
+//  Small popup message inspired by Android Toast object
+//
+//  Created by Nik Dyonin on 08.04.11.
+//  Copyright (c) 2011 Nik Dyonin. All rights reserved.
+//  Copyright (c) 2014 Brite Apps. All rights reserved.
+//
+
+
+#import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+
+#define ColorRGBA(a, b, c, d) [UIColor colorWithRed:(a / 255.0f) green:(b / 255.0f) blue:(c / 255.0f) alpha:d]
+
+typedef NS_ENUM(NSInteger, WToastDuration) {
+    
+	kWTShort = 1,
+	kWTLong = 5
+};
+
+@interface WToast : UIView
+
+@property (nonatomic,assign) NSInteger duration;
++ (void)showWithText:(NSString *)text;
++ (void)showWithImage:(UIImage *)image;
+
++ (void)showWithText:(NSString *)text duration:(NSInteger)duration;
++ (void)showWithImage:(UIImage *)image duration:(NSInteger)duration;
+
++ (void)showWithText:(NSString *)text duration:(NSInteger)duration roundedCorners:(BOOL)roundedCorners;
++ (void)showWithImage:(UIImage *)image duration:(NSInteger)duration roundedCorners:(BOOL)roundedCorners;
+
+@end

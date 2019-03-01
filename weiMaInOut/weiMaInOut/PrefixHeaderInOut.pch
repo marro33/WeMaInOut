@@ -1,0 +1,35 @@
+//
+//  PrefixHeaderInOut.pch
+//  weiMaInOut
+//
+//  Created by ZJ on 16/11/3.
+//  Copyright © 2016年 ZJ. All rights reserved.
+//
+
+#ifndef PrefixHeaderInOut_pch
+#define PrefixHeaderInOut_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "appSetting.h"
+
+#import "UIView+Additions.h"
+#import "LCProgressHUD.h"
+#import "WToast.h"
+#import "Soap.h"
+#import "SBJson.h"
+#import "FMDatabase.h"
+#import "ZJDataBase.h"
+#import "ZJButton.h"
+#import "requestManager.h"
+#import "baseViewController.h"
+#import "ZJNavController.h"
+#import "parseData.h"
+#import "ZJSearchViewController.h"
+#import "tableCell.h"
+#import "QRCodeScanVC.h"
+
+
+#endif /* PrefixHeaderInOut_pch */

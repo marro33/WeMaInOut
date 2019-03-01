@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://tempuri.org/">
+    <wsdl:types>
+        <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+            <s:element name="Down_infoUsers">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Json" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Down_infoUsersResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Down_infoUsersResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Down_infoUsersLogin">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Json" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Down_infoUsersLoginResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Down_infoUsersLoginResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Down_infoCustoms">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Json" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Down_infoCustomsResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Down_infoCustomsResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Down_infoGoods">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Json" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Down_infoGoodsResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Down_infoGoodsResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Down_infoBatch">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Json" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Down_infoBatchResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Down_infoBatchResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Up_DataIn">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Json" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Up_DataInResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Up_DataInResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Up_DataOut">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Json" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Up_DataOutResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Up_DataOutResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Up_DataBack">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Json" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="Up_DataBackResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="Up_DataBackResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+        </s:schema>
+    </wsdl:types>
+    <wsdl:message name="Down_infoUsersSoapIn">
+        <wsdl:part name="parameters" element="tns:Down_infoUsers"/>
+    </wsdl:message>
+    <wsdl:message name="Down_infoUsersSoapOut">
+        <wsdl:part name="parameters" element="tns:Down_infoUsersResponse"/>
+    </wsdl:message>
+    <wsdl:message name="Down_infoUsersLoginSoapIn">
+        <wsdl:part name="parameters" element="tns:Down_infoUsersLogin"/>
+    </wsdl:message>
+    <wsdl:message name="Down_infoUsersLoginSoapOut">
+        <wsdl:part name="parameters" element="tns:Down_infoUsersLoginResponse"/>
+    </wsdl:message>
+    <wsdl:message name="Down_infoCustomsSoapIn">
+        <wsdl:part name="parameters" element="tns:Down_infoCustoms"/>
+    </wsdl:message>
+    <wsdl:message name="Down_infoCustomsSoapOut">
+        <wsdl:part name="parameters" element="tns:Down_infoCustomsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="Down_infoGoodsSoapIn">
+        <wsdl:part name="parameters" element="tns:Down_infoGoods"/>
+    </wsdl:message>
+    <wsdl:message name="Down_infoGoodsSoapOut">
+        <wsdl:part name="parameters" element="tns:Down_infoGoodsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="Down_infoBatchSoapIn">
+        <wsdl:part name="parameters" element="tns:Down_infoBatch"/>
+    </wsdl:message>
+    <wsdl:message name="Down_infoBatchSoapOut">
+        <wsdl:part name="parameters" element="tns:Down_infoBatchResponse"/>
+    </wsdl:message>
+    <wsdl:message name="Up_DataInSoapIn">
+        <wsdl:part name="parameters" element="tns:Up_DataIn"/>
+    </wsdl:message>
+    <wsdl:message name="Up_DataInSoapOut">
+        <wsdl:part name="parameters" element="tns:Up_DataInResponse"/>
+    </wsdl:message>
+    <wsdl:message name="Up_DataOutSoapIn">
+        <wsdl:part name="parameters" element="tns:Up_DataOut"/>
+    </wsdl:message>
+    <wsdl:message name="Up_DataOutSoapOut">
+        <wsdl:part name="parameters" element="tns:Up_DataOutResponse"/>
+    </wsdl:message>
+    <wsdl:message name="Up_DataBackSoapIn">
+        <wsdl:part name="parameters" element="tns:Up_DataBack"/>
+    </wsdl:message>
+    <wsdl:message name="Up_DataBackSoapOut">
+        <wsdl:part name="parameters" element="tns:Up_DataBackResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="LogisticsApiSoap">
+        <wsdl:operation name="Down_infoUsers">
+            <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">参数下载接口</wsdl:documentation>
+            <wsdl:input message="tns:Down_infoUsersSoapIn"/>
+            <wsdl:output message="tns:Down_infoUsersSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoUsersLogin">
+            <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">用户登录接口</wsdl:documentation>
+            <wsdl:input message="tns:Down_infoUsersLoginSoapIn"/>
+            <wsdl:output message="tns:Down_infoUsersLoginSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoCustoms">
+            <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">目标客户信息</wsdl:documentation>
+            <wsdl:input message="tns:Down_infoCustomsSoapIn"/>
+            <wsdl:output message="tns:Down_infoCustomsSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoGoods">
+            <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">产品的信息下载</wsdl:documentation>
+            <wsdl:input message="tns:Down_infoGoodsSoapIn"/>
+            <wsdl:output message="tns:Down_infoGoodsSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoBatch">
+            <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取批次信息</wsdl:documentation>
+            <wsdl:input message="tns:Down_infoBatchSoapIn"/>
+            <wsdl:output message="tns:Down_infoBatchSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="Up_DataIn">
+            <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">企业仓库入库接口</wsdl:documentation>
+            <wsdl:input message="tns:Up_DataInSoapIn"/>
+            <wsdl:output message="tns:Up_DataInSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="Up_DataOut">
+            <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">企业仓库发货/经销商发货</wsdl:documentation>
+            <wsdl:input message="tns:Up_DataOutSoapIn"/>
+            <wsdl:output message="tns:Up_DataOutSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="Up_DataBack">
+            <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">企业仓库退货/经销商退货</wsdl:documentation>
+            <wsdl:input message="tns:Up_DataBackSoapIn"/>
+            <wsdl:output message="tns:Up_DataBackSoapOut"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="LogisticsApiSoap" type="tns:LogisticsApiSoap">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="Down_infoUsers">
+            <soap:operation soapAction="http://tempuri.org/Down_infoUsers" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoUsersLogin">
+            <soap:operation soapAction="http://tempuri.org/Down_infoUsersLogin" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoCustoms">
+            <soap:operation soapAction="http://tempuri.org/Down_infoCustoms" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoGoods">
+            <soap:operation soapAction="http://tempuri.org/Down_infoGoods" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoBatch">
+            <soap:operation soapAction="http://tempuri.org/Down_infoBatch" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Up_DataIn">
+            <soap:operation soapAction="http://tempuri.org/Up_DataIn" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Up_DataOut">
+            <soap:operation soapAction="http://tempuri.org/Up_DataOut" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Up_DataBack">
+            <soap:operation soapAction="http://tempuri.org/Up_DataBack" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="LogisticsApiSoap12" type="tns:LogisticsApiSoap">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="Down_infoUsers">
+            <soap12:operation soapAction="http://tempuri.org/Down_infoUsers" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoUsersLogin">
+            <soap12:operation soapAction="http://tempuri.org/Down_infoUsersLogin" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoCustoms">
+            <soap12:operation soapAction="http://tempuri.org/Down_infoCustoms" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoGoods">
+            <soap12:operation soapAction="http://tempuri.org/Down_infoGoods" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Down_infoBatch">
+            <soap12:operation soapAction="http://tempuri.org/Down_infoBatch" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Up_DataIn">
+            <soap12:operation soapAction="http://tempuri.org/Up_DataIn" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Up_DataOut">
+            <soap12:operation soapAction="http://tempuri.org/Up_DataOut" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="Up_DataBack">
+            <soap12:operation soapAction="http://tempuri.org/Up_DataBack" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="LogisticsApi">
+        <wsdl:port name="LogisticsApiSoap" binding="tns:LogisticsApiSoap">
+            <soap:address location="http://stest.veiwa.com/WebService/LogisticsApi.asmx"/>
+        </wsdl:port>
+        <wsdl:port name="LogisticsApiSoap12" binding="tns:LogisticsApiSoap12">
+            <soap12:address location="http://stest.veiwa.com/WebService/LogisticsApi.asmx"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
